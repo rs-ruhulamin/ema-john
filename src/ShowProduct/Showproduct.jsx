@@ -52,13 +52,6 @@ const Showproduct = () => {
  
     
 
-    // let total = 0;
-    // for (let i = 0; i < getData.length; i++) {
-    //     const product = getData[i];
-    //     total = total + product.price;
-        
-    // }
-    
 
     return (
         <div>

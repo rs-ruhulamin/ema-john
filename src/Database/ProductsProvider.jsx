@@ -10,7 +10,7 @@ export const ProductsProvider = ({ children }) => {
   useEffect(() => {
     async function fetchData() {
         try {
-            const response = await fetch('/public/fakeData/products.json');
+            const response = await fetch('../../public/fakeData/products.json');
             if (!response.ok) {
                 throw new Error('Failed to fetch data');
             }

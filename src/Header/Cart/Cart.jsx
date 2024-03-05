@@ -24,46 +24,31 @@ const Cart = () => {
   };
 
 
+// Function to increase the quantity of an item in the cart
+const increaseQuantity = (key) => {
+  const updatedCart = cart.map(item => {
+    if (item.key === key) {
+      const updatedItem = { ...item, quantity: item.quantity + 1 };
+      addToDatabaseCart(key, updatedItem.quantity); // Update local storage
+      return updatedItem;
+    }
+    return item;
+  });
+  setCart(updatedCart); // Update cart state
+};
 
-
-  // Function to increase the quantity of an item in the cart
-  const increaseQuantity = (key) => {
-    const updatedCart = cart.map(item => {
-      if (item.key === key) {
-        return { ...item, quantity: item.quantity + 1 };
-      }
-      return item;
-    });
-   
-    const toBeAddedKey = key;
-    const sameProduct = cart.find(pd => pd.key === toBeAddedKey);
-    let count = sameProduct.quantity;
-
-    addToDatabaseCart(toBeAddedKey, count);
-    setCart(updatedCart);
-  };
-
-  
-
-
-
-  // Function to decrease the quantity of an item in the cart
-  const decreaseQuantity = (key) => {
-    const updatedCart = cart.map(item => {
-      if (item.key === key && item.quantity > 1) {
-        return { ...item, quantity: item.quantity - 1 };
-      }
-      return item;
-    });
-
-    const toBeAddedKey = key;
-    const sameProduct = cart.find(pd => pd.key === toBeAddedKey);
-    let count = sameProduct.quantity;
-
-    addToDatabaseCart(toBeAddedKey, count);
-    setCart(updatedCart);
-  };
-
+// Function to decrease the quantity of an item in the cart
+const decreaseQuantity = (key) => {
+  const updatedCart = cart.map(item => {
+    if (item.key === key && item.quantity > 1) {
+      const updatedItem = { ...item, quantity: item.quantity - 1 };
+      addToDatabaseCart(key, updatedItem.quantity); // Update local storage
+      return updatedItem;
+    }
+    return item;
+  });
+  setCart(updatedCart); // Update cart state
+};
 
 
 
