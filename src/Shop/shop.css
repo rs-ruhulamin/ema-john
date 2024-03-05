@@ -1,0 +1,38 @@
+.main-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.shop_box {
+    display: inline-block;
+    max-width: 250px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+
+
+
+.p_titel {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+.img {
+    margin-bottom: 20px;
+}
+
+.nav-body {
+    background-color: #ffaf39;
+    padding: 10px 0;
+  }
+  .menu.link {
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #221f1f;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+  }

@@ -1,0 +1,49 @@
+.logo-box{
+    min-width: 250px;
+    width: 250px;
+}
+
+.logo{
+    width: 100%;
+}
+
+.other_box{
+ 
+    display: flex;
+    justify-content: end;
+}
+
+.search_box{
+    min-width: 500px;
+}
+
+
+
+.header-boxs {
+    padding: 25px 0;
+  }
+  .search input {
+    width: 100% !important;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid;
+    outline: none;
+  }
+  .search_btn {
+    border: none;
+    background: none;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 100%;
+
+
+}
+
+.account-icon i, 
+.search_btn i,
+.Cart-icon-box i{
+    font-size: 24px;
+    color: #ff9903;
+}

@@ -1,0 +1,23 @@
+.p_titel{
+    font-size: 16px;
+    color: #000;
+}
+
+.star-box i {
+    color: gold;
+    font-size: 12px;
+}
+.star-box span{
+    font-size: 12px;
+    color: #000;
+}
+
+h4.price {
+    font-size: 16px;
+    color: #ff0073 !important;
+    font-weight: bolder;
+}
+
+h5.discountPrice {
+    font-size: 14px;
+}

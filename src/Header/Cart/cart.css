@@ -1,0 +1,46 @@
+.mp_title {
+    padding: 20px 0;
+    border-bottom: 3px solid #221f1f;
+    margin-bottom: 20px;
+}
+
+.cartdetails {
+    padding: 20px 0;
+}
+
+.Cartbox {
+    position: fixed;
+    width: 40%;
+    height: 100vh;
+    background-color: aliceblue;
+    top: 0;
+    right: 0;
+    text-align: center;
+  }
+
+
+ 
+  
+  .box {
+    width: 30%;
+    height: 100vh;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+    position: fixed;
+    right: -100%;
+    top: 0;
+  }
+  
+  .box.active {
+    
+    opacity: 1;
+    right: 0;
+  }
+  
+  button {
+    margin: 5px;
+  }
+  
