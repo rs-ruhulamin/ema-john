@@ -6,11 +6,12 @@ import './owl.css';
 
 const Slider = () => {
     const images = [
-        "/public/assets/slider/slider0.jpg",
-        "/public/assets/slider/slider1.jpg",
-        "/public/assets/slider/slider2.jpg",
-        "/public/assets/slider/slider3.jpg",
-        "/public/assets/slider/slider4.jpg"
+        "../../../public/assets/slider/slider0.jpg",
+        "../../../public/assets/slider/slider1.jpg",
+        "../../../public/assets/slider/slider2.jpg",
+        "../../../public/assets/slider/slider3.jpg",
+        "../../../public/assets/slider/slider4.jpg"
+    
     ];
 
     const options = {
