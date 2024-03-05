@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useProduct } from '../../Database/ProductsProvider';
-import { Link } from 'react-router-dom';
+import SearchResults from './SearchResults';
 
 const Search = () => {
     const { GetAllProducts } = useProduct();
@@ -33,6 +33,11 @@ const Search = () => {
         setSearchTerm(event.target.value);
     };
 
+
+    
+
+
+
     return (
         <div className='search w-100 position-relative'>
             <input type="text" value={searchTerm} onChange={handleChange} className='w-100' placeholder='Search Your Dream Products' />
@@ -41,10 +46,10 @@ const Search = () => {
             {searchResults.length > 0 && (
                 <div className='showing_results position-absolute'>
                     <ul>
-                        {searchResults.map((item, index) => (
-
-                            <Link>                             <li key={index}>{item.name}</li> </Link>
-                        ))}
+                    
+                        
+                        {searchResults.map(item => <SearchResults products={item} ></SearchResults>)}
+                        
                     </ul>
                 </div>
             )}
