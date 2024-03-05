@@ -8,6 +8,7 @@ import Showproduct from "./ShowProduct/Showproduct";
 import F404 from "./Error/F404";
 import { CartProvider } from "./Header/Cart/CartContext";
 import { ProductsProvider } from "./Database/ProductsProvider";
+import Search from "./Header/Search/Search";
 
 
 
@@ -43,6 +44,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Shop />} />
         <Route path="/order" element={<ViewOder />} />
+        <Route path="/search" element={<Search />} />
         <Route path="/:DoneUrl" element={<Showproduct />} />
         <Route path="*" element={<F404/>} />
      
